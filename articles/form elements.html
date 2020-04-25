@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="descripton" content="learning how to get a form elements">
+	<title>form elements</title>
+	<script>
+		function sayHello()
+		{
+			alert("Hello");
+		}
+	</script>
+	<style type="text/css">
+		fieldset{
+			color: green;
+			background: #ddd;
+			padding: 5px;
+			border: 5px solid blue;
+			font-weight: bold;
+		}
+		legend{
+			color: red;
+			background:#fef;
+			border: 4px outset yellow;
+		}
+	</style>
+</head>
+<body>
+ <form name="login">
+ 	<fieldset>
+ 		<legend>log in</legend>
+ 	<label>username</label><br>
+ 	<input type="text" name="username" placeholder="username">
+ 	<br>
+ 	<label>password</label><br>
+ 	<input type="password" name="password" placeholder="password">
+ 	<br>
+ 	<input type="checkbox">
+ 	<label>remember me</label>
+ 	<br>
+ 	<label>send a message</label><br>
+ 	<textarea rows="6" cols="50" placeholder="type your message"></textarea>
+ 	</fieldset>
+
+   <fieldset>  
+   	<legend> your favourites</legend>
+    <label>choose your gender</label><br>
+    <input type="radio" name="gender" value="male">male<br>
+    <input type="radio" name="gender" value="female">female<br>
+    <input type="radio" name="gender" value="other">other<br>
+    <label>choose your age</label><br>
+    <input type="radio" name="age" value="-18">-18<br>
+    <input type="radio" name="age" value="18-25">18-25<br>
+    <input type="radio" name="age" value="+25">+25<br>
+    <select name="date of the birth">
+    	<optgroup label="20th century">
+    	<option value="1">+2003</option>
+    	<option value="2">2003</option>
+    	<option value="3">2002</option>
+    	<option value="4">2001</option>
+    	<option value="5">2000</option>
+    	</optgroup>
+    	<optgroup label="19th century">
+    	<option value="6">1999</option>
+    	<option value="7">1998</option>
+    	<option value="8">1997</option>
+    	<option value="9">1996</option>
+    	<option value="10">1995</option>
+    	<option value="11">1994</option>
+    	<option value="12">1993</option>
+    	<option value="13">1992</option>
+    	<option value="14">1991</option>
+    	<option value="15">1990</option>
+    	<option value="16">-1990</option>
+    	</optgroup>
+    </select><br>
+    <input type="image" src="m.jpg" width="300px"><br>
+   </fieldset>
+
+   <fieldset>
+   	<legend>submit options</legend>
+ 	  <input type="submit" value="login">
+ 	  <br>
+ 	  <label>type your image</label>
+ 	  <input type="file" name="file">
+      <br>
+      <input type="reset" name="restore default" value="restore default"><br>
+      <input type="button" name="sayHello" value="sayHello" onclick="sayHello()"><br>
+   </fieldset>
+ </form>
+</body>
+</html>

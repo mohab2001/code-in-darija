@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New Form Attributes</title>
+	<link rel="stylesheet" type="text/css" href="../css/attributes.css">
+</head>
+<body>
+  <!--start header -->
+   <header>
+   	<h1>First Html 5 Learning Tags</h1>
+   </header>
+  <!--end header -->
+
+  <!--start nav -->
+   <nav>
+   	<ul>
+   		<li><a href="../Home Page.html">Home</a></li>
+   		<li><a href="../about/About.html">About</a></li>
+   		<li><a href="../about/Contact.html">Contact Us</a></li>
+   		<li><a href="/.html">Services</a></li>
+   	</ul>
+   </nav>
+  <!--end nav -->
+  <!-- start main -->
+  <main>
+  	<p>Welcome To Moha's Html 5 Page</p>
+  	<p></p>
+  </main>
+  <!-- End main -->
+  <div class="post">
+  <!--start articles -->
+  <article>
+  	<header>
+  		<h3>Autocomplete atrribute</h3>
+  		<p>&lt;input type="text" name="username" autocomplete="off"&gt;</p>
+  		<p>&lt;input type="text" name="username" autofocus="on"&gt;</p>
+  		<p>&lt;input type="text" name="username" required&gt;</p>
+  	</header>
+  	<section>
+  		<form novalidate>
+  			<input type="text" name="username" autocomplete="off" autofocus="on" required><br>
+  			<input type="email" name="mail" autofocus="off" autocomplete="off"><br>
+  			<input type="submit" name="submit" value="send">
+  		</form>
+  		<p><span class="atr">Novalidate</span> attribute katsta3mel bach tgol lbrowser bli dak email machi mochkil ila dkhltih bla @ ya3ni momkin dir "mabaragh75" blasst "mabaragh75@gmail.com" ohiya kadreb lik 3la b3d attributes bhal dik <mark>required</mark></p>
+  		<p><span class="atr"> autocomplete</span> attribute dawr dyalha hiya katmn3 lbrowser bach ykmml email wla vchi haja lifayt ktbtih f lowl fdak website</p>
+  		<p><span class="atr">autofocus</span> attribute katsta3ml f lform bach tgol ldak chakhss ha fin 
+  		tktb bla mayhtaj ywarek howa </p>
+  		<p><span class="atr">required</span> attribute katsta3ml bach tgol lchi wahd bli dakchi rah darouri tktbo ya3ni dik input mtloba t3merha 3ad tsjel matalan dirha f tarikh izdiyad wla mot de pass ... </p>
+  		<fieldset>
+  		<h2>Script dyal had attributes li dwina 3lihom</h2>
+	  	<p class="script">
+	  	&lt;<span class="tag">form</span> <span class="atr">novalidate</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="text" name="username" autocomplete="off" autofocus="on" required</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="email" name="mail" autofocus="off" autocomplete="off"</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="submit" name="submit" value="send"</span>&gt;<br>
+	  	&lt;/<span class="tag">form</span>&gt;
+	  	</p>
+	  	</fieldset>
+  	</section>
+  </article>
+  <article>
+  	<header>
+  		<h3>Enctype, Action, Method, FormAction, FormMethod Attributes</h3>
+  	</header>
+  	<section>
+  		<form action="moha.php" method="get" enctype="" novalidate>
+  			<input type="text" name="username" autocomplete="off" autofocus="off" required><br>
+  			<input type="email" name="mail" autofocus="off" autocomplete="off"><br>
+  			<input type="submit" name="submit" value="Default submit">
+  			<input type="submit" name="submit" formaction="ab.php" formmethod="post" value="Other submit">
+  		</form>
+  		<p><span class="atr">Action</span> attribute kanstta3mloha m3a &lt;Form&gt; tag bach ndiro wahd fichier ta3 PHP li mt3l9 b <mark>Data Base</mark> mohim howa bach kanweriw lform dyalna fin ghathat dok m3lomat ta3ha f <strong>Data Base</strong> dyalna kandiro action="Moha.php"</p>
+  		<p><span class="atr">Method</span> attribute kansta3mloha bach ngolo lbrowser kifach ghadi ybiyen lina lm3lomat dyal lform f lien ohad attribute 3ndha 2 dyal lvalues li homa:<br>value 1: <span class="atr-value">Post</span> hadi kansta3mloha bach bach maybanoch m3lomat f lien dyal site;<br><br>Ex: <mark>www.moha-programmer.com/moha.php?username=moha2001<wbr>+email=mabaragh75@gmail.com+password=moha252001</wbr></mark><br> value 2: <span class="atr-value">Get</span> kansta3mloha bach nbiyeno dok m3lomat f lien <br>Ex: <mark>www.moha-programmer.com/moha.php</mark></p>
+  		<p><span class="atr">FormAction</span> attribute hiya <mark>Action</mark> attribute ghir had <strong>FormAction</strong> kansta3mloha m3a <span class="atr-value">submit input</span> bhal db ila bghit n3zl wahd submit button bohdo lighaysift liya m3lomat lchi database akhra mn ghir dik likayna f action dyal lform kamla</p>
+  		<p><span class="atr">FormMethod</span> attribute hiya <mark>Method</mark> attribute ghir hiya tani katsta3mel bach t3zl submit button bhal dik <mark>FormAction</mark> mohim kima kaytjm3 <strong>Action</strong> attribute m3a <strong>Method</strong> attribute f lform hta <strong>FormAction</strong> katjm3 m3a <strong>FormMethod</strong> f submit button kima drna f example dyalna</p>
+  		<p><span class="atr">Enctype</span> attribute hiya bach kandiro tachfir l ma3lomat dyal lform <mark>l'Encryption</mark></p>
+  		<p><span class="atr"></span></p>
+  		<fieldset>
+  		<h2>Script dyal had attributes li dwina 3lihom</h2>
+	  	<p class="script">
+	  	&lt;<span class="tag">form</span> <span class="atr">action="moha.php" method="get" enctype="" novalidate</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="text" name="username" autocomplete="off" autofocus="on" required</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="email" name="mail" autofocus="off" autocomplete="off"</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="submit" name="submit" value="Default submit"</span>&gt;<br>
+		&lt;<span class="tag">input</span> <span class="atr">type="submit" name="submit" formaction="ab.php" formmethod="post" value="Other submit"</span>&gt;<br>
+	  	&lt;/<span class="tag">form</span>&gt;
+	  	</p>
+	  	</fieldset>
+  	</section>
+  </article>
+  <article>
+  	<header>
+  		<h3>FormNovalidate, FormTarget, form Attributes</h3>
+  	</header>
+  	<section>
+  		<form id="main-form" action="moha.php" method="get">
+  			<input type="text" name="username" autocomplete="off" autofocus="off" required><br>
+  			<input type="email" name="mail" autofocus="off" autocomplete="off"><br>
+  			<input type="submit" name="submit" value="Default submit">
+  			<input type="submit" name="submit" formnovalidate formtarget="_blank" value="submit without validation">
+  		</form>
+  		<label>Nickname</label>
+  		<input type="text" name="Nickname" form="main-form">
+  		<p><span class="atr">FormNovalidate</span> attribute hiya bhal <span class="atr-value">Novalidate</span> attribute ghir hiya katkon m3a <strong>input</strong> tag bdabt f <mark>submit</mark> bach ysift lina m3lomat dyal lform bla machakil bla walo</p>
+  		<p><span class="atr">FormTarget</span> attribute hiya bhal <strong>Target</strong> attribute f <mark>link</mark> hiya kandiroha m3a <strong>input</strong> hta hiya f <mark>submit</mark> bach ngolo lbrowser ydir <strong>submit</strong> f new windows</p>
+  		<p><span class="atr">Form</span> Attribute hiya kandiroha m3a chi <strong>Input</strong> tag kharj <span class="atr-value">Form</span> tag kanktbo fhad attribute l'<span class="atr-value">id</span> dyal <strong>form</strong> tag bach ngolo lbrowser bli dik <strong>input</strong> dakhla m3a lform wakha hiya kharja 3liha mohim ghadi y9bl lm3lomat kamla<br>Example rah kayn f dik script ltaht</p>
+  		<fieldset>
+	  		<h2>Script dyal had attributes li dwina 3lihom</h2>
+		  	<p class="script">
+		  	&lt;<span class="tag">form</span> <span class="atr">id="main-form" action="moha.php" method="get"</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="text" name="username" autocomplete="off" autofocus="on" required</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="email" name="mail" autofocus="off" autocomplete="off"</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="submit" name="submit" value="Default submit"</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="submit" name="submit" formnovalidate formtarget="_blank" value="submit without validation"</span>&gt;<br>
+		  	&lt;/<span class="tag">form</span>&gt;<br>
+		  	&lt;<span class="tag">label</span>&gt;Nickname&lt;<span class="tag">/label</span>&gt;<br>
+		  	&lt;<span class="tag">input</span> <span class="atr">type="text" name="Nickname" form="main-form"</span>&gt;
+		  	</p>
+	  	</fieldset>
+  	</section>
+  </article>
+  <article>
+  	<header>
+  		<h3>Multiple, placeholder attributes</h3>
+  	</header>
+  	<section>
+  		<form>
+  			<label>Username</label><br>
+  			<input type="text" name="Username" placeholder="Username"><br>
+  			<label>Password</label><br>
+  			<input type="Password" name="password" placeholder="password"><br>
+  			<label>Your Pictures</label>
+  			<input type="file" name="identify" multiple><br>
+  			<input type="submit" value="submit">
+  		</form>
+  		<p><span class="atr">Placeholder</span> Attribute kandiroha f <strong>input wla chi blassa tanktbo fiha</strong> baach ndkhlo wahd lklam fdik zone dyal lktba bla mathssb f data base bhal db username blasst mandiro label ondiro fih username kandiro <span class="atr-value">placeholder</span> bach nktboha fih otb9a bayna otatgol ldak chakhss ach ghayktb fih bach mayghltch</p>
+  		<p><span class="atr">Multiple</span> Attribute kansta3mloha bach ngolo lbrowser bli dik <strong>input</strong> ghaykon fiha bzaf dyal les donnees matalan blasst <mark>Email</mark> tanktboha f input ta3ha bach ndiro ktr mn Email wahd wla matalan f input ta3 <mark>file</mark> kandiroha m3ah bach ngolo lbrowser bli tma ghaydar fih ktr mn <strong>Fichier</strong> wahd</p>
+  		<p><mark><strong>Chof ga3 les examples li3ndk tma bach tfhm ktr</strong></mark></p>
+  		<fieldset>
+	  		<h2>Script dyal had attributes li dwina 3lihom</h2>
+		  	<p class="script">
+		  	&lt;<span class="tag">form</span>&gt;<br>
+		  	&lt;<span class="tag">label</span>&gt;Username&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="text" name="Username" placeholder="Username"</span>&gt;<br>
+			&lt;<span class="tag">label</span>&gt;Password&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="Password" name="password" placeholder="password"</span>&gt;<br>
+			&lt;<span class="tag">label</span>&gt;Your Pictures&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="file" name="identify" multiple</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="submit" value="submit"</span>&gt;<br>
+		  	&lt;/<span class="tag">form</span>&gt;
+		  	</p>
+	  	</fieldset>
+  	</section>
+  </article>
+  <article>
+  	<header>
+  		<h3>Min, Max, Step, Pattern Attributes</h3>
+  	</header>
+  	<section>
+  		<form>
+  			<label>Min & Max & Step</label><br>
+  			<input type="number" min="10" max="100" step="10"><br>
+  			<label>Pattern</label><br>
+  			<input type="text" pattern="[A-Z a-z 0-9]{06}"><br>
+  			<input type="submit" name="submit">
+  		</form>
+  		<p><span class="atr">Min</span> Attribute kansta3mloha bach nhadedo <mark>A9al 9ima(value) lwahd lhaja</mark></p>
+  		<p><span class="atr">Max</span> Attribute kansta3mloha bach nhadedo <mark>A3la 9ima(value) lwahd lhaja</mark></p>
+  		<p><span class="atr">Step</span> Attribute kansta3mloha bach nhadedo <mark>chhal mn khotwa ghatn9z dik lhaja</mark></p>
+  		<p><span class="atr">Pattern</span> Attribute kansta3mloha f <strong>input</strong> tag bach ndiro lih kifach ghaykono dok m3lomat lighaydaro fih mn nahiyt kifach ghaykon chkl dyal lktba d lm3lomat wach miniscule w majiscule wla chhal ta3 lhorof lighaykono fih fdik <strong>input</strong><br>obach nhadedo hadchi kandiro f <strong>value</strong> dyal attribute: <br># ila bghina <strong>Miniscule:</strong> <span class="atr-value">[a-z]</span>; <br># ila bghina <strong>Majiscule:</strong> <span class="atr-value">[A-Z]</span><br># ila bghina <strong>Miniscule & Majiscule:</strong> <span class="atr-value">[A-Z a-z]</span><br># ila bghina <strong>nhadedo chhal mn 7arf:</strong> <span class="atr-value">{06}</span> wla <span class="atr-value">{10}</span> 3la hassab chhal bghina ta3 lhorof</p>
+  		<fieldset>
+	  		<h2>Script dyal had attributes li dwina 3lihom</h2>
+		  	<p class="script">
+		  	&lt;<span class="tag">form</span>&gt;<br>
+		  	&lt;<span class="tag">label</span>&gt;Min & Max & Step&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="number" min="10" max="100" step="10"</span>&gt;<br>
+			&lt;<span class="tag">label</span>&gt;Pattern&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="text" pattern="[A-Z a-z 0-9]{06}"</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="submit" value="submit"</span>&gt;<br>
+		  	&lt;/<span class="tag">form</span>&gt;
+		  	</p>
+	  	</fieldset>
+  	</section>
+  </article>
+  <article>
+  	<header>
+  		<h3>ReadOnly vs Disabled Attributes</h3>
+  	</header>
+  	<section>
+  		<form>
+  			<label>Readonly</label><br>
+  			<input type="text" name="read" value="moha2001" readonly><br>
+  			<label>Disabled</label><br>
+  			<input type="text" name="Disabled" value="moha2001" disabled><br>
+  			<input type="submit" name="submit">
+  		</form>
+  		<p><span class="atr">Readonly</span> Attribute kandiroha f <strong>input</strong> tag bach ngolo lbrowser ghi 9ra ms mat9der dir walo ohiya katsift m3a server bach t3alj ya3ni raha kathssb m3a m3lomat dyal form</p>
+  		<p><span class="atr">Disabled</span> Attribute hiya katchbeh l <span class="atr-value">Readonly</span> attribute hta hiya kandiroha f <strong>input</strong> tag ms kayn far9 binathom hit had <strong>disabled</strong> maymknch tsift m3a m3lomat lform ghir kat9ra osf kayban lik text wla lhaja omat9dr dir liha walo</p>
+  		<fieldset>
+	  		<h2>Script dyal had attributes li dwina 3lihom</h2>
+		  	<p class="script">
+		  	&lt;<span class="tag">form</span>&gt;<br>
+		  	&lt;<span class="tag">label</span>&gt;Readonly&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="text" name="read" value="moha2001" readonly</span>&gt;<br>
+			&lt;<span class="tag">label</span>&gt;Disabled&lt;<span class="tag">/label</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr" >type="text" name="Disabled" value="moha2001" disabled</span>&gt;<br>
+			&lt;<span class="tag">input</span> <span class="atr">type="submit" value="submit"</span>&gt;<br>
+		  	&lt;/<span class="tag">form</span>&gt;
+		  	</p>
+	  	</fieldset>
+  	</section>
+  </article>
+  <!--End articles -->
+</div>
+  <!--start sidebar-->
+  <aside>
+  	<section>
+  		<h3>Category 1</h3>
+  		<ul>
+  			<li>Home</li>
+  			<li>Services</li>
+  			<li>Contact Us</li>
+  			<li>About Us</li>
+  		</ul>
+  	</section>
+  	<section>
+  		<h3>Performance</h3>
+  		<div>Cpu: <meter min="1" max="10" value="4" low="5" high="8" optimum="6"></meter></div>
+  	</section>
+  	<section>
+  		<h3>points of educ</h3>
+  		<ul>
+  			<li>English: 17 point</li>
+  			<li>Math: 13 ponit</li>
+  			<li><bdi>تفثيؤ </bdi>: 12 ponit</li>
+  		</ul>
+  		<p>dawr dyal dik &lt;bdi&gt; katgad lik ktba li bl3arbiya bach matdakhlch m3a lktba li b anglais</p>
+  	</section>
+  </aside>
+  <!--End sidebar -->
+  <!--Start footer -->
+  <footer>
+  	<p>Copyright 2020 © All Rights Reserved ®</p>
+  </footer>
+  <!--end footer -->
+</body>
+</html>
